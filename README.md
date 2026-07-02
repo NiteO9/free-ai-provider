@@ -220,8 +220,8 @@ Supported API endpoints include:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/chatsmith-openai-provider.git
-cd chatsmith-openai-provider
+git clone https://github.com/NiteO9/free-ai-provider.git
+cd free-ai-provider
 ```
 
 Install Dependencies
