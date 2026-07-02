@@ -1,4 +1,4 @@
-
+# Free AI Provider unlimited unofficial.. 
 ---
 
 # Telegram channel
@@ -9,7 +9,7 @@ Official Telegram Channel:
 
 https://t.me/tele_t
 
-# Free AI Provider
+# api for free unlimited
 
 A lightweight OpenAI-compatible API provider that bridges ChatSmith models to the OpenAI Chat Completions interface.
 
