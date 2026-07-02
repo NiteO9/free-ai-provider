@@ -1,5 +1,15 @@
 Enter```markdown
-# ChatSmith OpenAI Provider
+---
+
+# Telegram channel
+
+Stay updated with project announcements, releases, and development progress.
+
+Official Telegram Channel:
+
+https://t.me/tele_t
+
+# Free AI Provider
 
 A lightweight OpenAI-compatible API provider that bridges ChatSmith models to the OpenAI Chat Completions interface.
 
