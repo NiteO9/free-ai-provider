@@ -1,4 +1,4 @@
-Enter```markdown
+
 ---
 
 # Telegram channel
@@ -746,4 +746,4 @@ Acknowledgments
 · Pi Coding Agent for testing and validation
 · All contributors and users of this project
 
-```
+
