@@ -12,11 +12,9 @@
   "security": {
     "secret_key": "vulcanlabs_smith_secret_key_2024",
     "fallback_token": "H1a9u5gRJxpcRjfthEafDu8wOal6FH1qzOnQBCmrtv3Nwg/S/HdJGEZQPHVwdXzsQno37E0Y0V0CADOxaLLGCUJiTPlQ/AdO50BtZsC+UO1oDHEhFk/vBlLnCJ9UekkDYfWZC9RtzVtVRqXiYWFQvUelbH6wPH4Yj5LTHZ9vmfo="
-  }, // you can change host and port
+  },
   "server": {
     "host": "0.0.0.0",
     "port": 8000
   }
 }
-// telegram channel: https://t.me/tele_t
-// github: https://github.com/NiteO9
