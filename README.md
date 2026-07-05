@@ -333,102 +333,6 @@ curl -X POST http://localhost:8000/v1/chat/completions \
 
 ---
 
-Docker Deployment
-
-Build the Docker Image
-
-```bash
-docker build -t chatsmith-provider .
-```
-
-Run the Container
-
-```bash
-docker run -d -p 8000:8000 chatsmith-provider
-```
-
-Dockerfile
-
-```dockerfile
-FROM python:3.10-slim
-
-WORKDIR /app
-
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-COPY server.py .
-
-EXPOSE 8000
-
-CMD ["python", "server.py"]
-```
-
----
-
-Deployment Options
-
-Local Development
-
-```bash
-python server.py
-```
-
-Production Server
-
-Using Gunicorn:
-
-```bash
-pip install gunicorn
-gunicorn -w 4 -b 0.0.0.0:8000 server:app
-```
-
-Using systemd
-
-Create a service file at /etc/systemd/system/chatsmith.service:
-
-```ini
-[Unit]
-Description=ChatSmith OpenAI Provider
-After=network.target
-
-[Service]
-Type=simple
-User=your-user
-WorkingDirectory=/path/to/project
-ExecStart=/usr/bin/python3 /path/to/project/server.py
-Restart=always
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Enable and start the service:
-
-```bash
-sudo systemctl enable chatsmith
-sudo systemctl start chatsmith
-```
-
-Using Supervisor
-
-Create a configuration file at /etc/supervisor/conf.d/chatsmith.conf:
-
-```ini
-[program:chatsmith]
-command=python3 /path/to/project/server.py
-directory=/path/to/project
-autostart=true
-autorestart=true
-stderr_logfile=/var/log/chatsmith.err.log
-stdout_logfile=/var/log/chatsmith.out.log
-```
-
----
-
-VPS Deployment
-
 Using SSH
 
 1. Copy files to your VPS:
@@ -468,7 +372,7 @@ Add to ~/.pi/agent/models.json:
 {
   "providers": {
     "chatsmith": {
-      "name": "ChatSmith Provider",
+      "name": "enter folder name",
       "baseUrl": "http://localhost:8000/v1",
       "api": "openai-completions",
       "apiKey": "none",
